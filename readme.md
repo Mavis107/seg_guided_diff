@@ -6,33 +6,6 @@ Topic: **Image Translation and Generation with Latent Diffusion** \
 Students: Florian Hunecke, Chin Ju Chen \
 Advisor: Robert Graf 
 
-## Structure
-```
-/vol/miltank/projects/practical_WS2425/diffusion/
-├── code (this repository)
-│   ├── amos_segmentator                : Unet based 2D segmenation model for amos data 
-│   ├── eda                             : Exploratory Data Analysis
-│   ├── evaluation                      : Scripts for evaluating image generations
-│   ├── segmenttation-guided-diffusion  : Diff-Moddel for seg guided image generation                 
-│   ├── showcase                        : Showcase images
-│   ├── utils                           : Utility functions
-│   │   ├── dataset                     : Data related code
-│   │   │   ├── amos.py                 : Custom dataset for amos data 
-│   │   │   ├── custom.py               : Custom dataset for any image folder
-│   │   │   ├── transforms.py           : Custom transforms for image-label pairs       
-│   │   ├── filter_mask                 : Script for filtering images
-│   │   ├── slicing                     : Script for slicing nifti images
-│   │   └── utils.py                    : Misc Utility functions
-│   └── vqvae                           : VQ-VAE model for image and mask embedding
-└── data                                
-    ├── amos22                          : Amos22 nifti
-    ├── amos_robert                     : Amos TotalVibeSegmentor nifti
-    ├── amos_robert_embeddings          : VQ-VAE embeddings
-    ├── amos_robert_slices              : Slices of amos data, axial, coronal, sagittal
-    ├── amos_slices                     : Slices of amos data, axial, coronal, sagittal
-    └── test_data                       : Small datasubset for experimenting
-```
-
 ## Description
 Previous work mostly focused on segmentation of medical images. The annotation of different structures in medical images, which is a crucial step in medical image analysis. Many deep learning structures exist to successfully automate this process.
 
