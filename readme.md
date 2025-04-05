@@ -1,4 +1,4 @@
-# Segmentation Guided Medical Image Generation using Diffusion
+# Medical Image Generation using Segmentation Guided Diffusion
 
 This is the main repository for our work on the WS24 master practical course `Applied Deep Learning in Medicine (IN2106, IN4314)`. 
 
